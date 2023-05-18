@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pp
+*.asm
+*.lst
+*.map
+*.obj
+*.out
+*.pickle

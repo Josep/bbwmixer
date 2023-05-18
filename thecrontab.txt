@@ -1,0 +1,1 @@
+@reboot	/home/debian/bbwmixer/start.sh

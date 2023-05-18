@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>BBWMIXER</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="AUTHOR" content="Josep Dant&iacute;" />
+    <meta name="KEYWORDS" content="mixer" />
+    <meta name="DESCRIPTION" content="audio mixer with beaglebone" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <fieldset>
+      <legend>Master</legend>
+      <input type="checkbox" onClick="toggle(this)" name="mute_m">
+      <label for="mute_m">Mute&nbsp;&nbsp;</label>
+      <input type="checkbox" id="bal0" value="Bal0" checked>
+      <label for="bal0">L=R&nbsp;&nbsp;</label>
+      <input type="checkbox" onClick="toggle(this)" name="zc_m" checked>
+      <label for="zc_m">Zero Cross&nbsp;&nbsp&nbsp;&nbsp;</label>
+      <label>Left:<span id="master_lv"></span>&nbsp;&nbsp;</label>
+      <label>Right:<span id="master_rv"></span>&nbsp;&nbsp;</label>
+      <input type="range" min="0" max="255" value="127" class="slider" id="masterL">
+      <input type="range" min="0" max="255" value="127" class="slider" id="masterR">
+    </fieldset>
+    <fieldset>
+      <legend>Channel #1</legend>
+      <input type="checkbox" onClick="toggle(this)" name="mute_c1">
+      <label for="mute_c1">Mute&nbsp;&nbsp;</label>
+      <input type="checkbox" id="bal1" value="Bal1" checked>
+      <label for="bal1">L=R&nbsp;&nbsp;</label>
+      <label>Left:<span id="c1_lv"></span>&nbsp;&nbsp;</label>
+      <label>Right:<span id="c1_rv"></span>&nbsp;&nbsp;</label>
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch1L">
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch1R">
+    </fieldset>
+    <fieldset>
+      <legend>Channel #2</legend>
+      <input type="checkbox" onClick="toggle(this)" name="mute_c2">
+      <label for="mute_c2">Mute&nbsp;&nbsp;</label>
+      <input type="checkbox" id="bal2" value="Bal2" checked>
+      <label for="bal2">L=R&nbsp;&nbsp;</label>
+      <label>Left:<span id="c2_lv"></span>&nbsp;&nbsp;</label>
+      <label>Right:<span id="c2_rv"></span>&nbsp;&nbsp;</label>
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch2L">
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch2R">
+    </fieldset>
+    <fieldset>
+      <legend>Channel #3</legend>
+      <input type="checkbox" onClick="toggle(this)" name="mute_c3">
+      <label for="mute_c3">Mute&nbsp;&nbsp;</label>
+      <input type="checkbox" id="bal3" value="Bal3" checked>
+      <label for="bal3">L=R&nbsp;&nbsp;</label>
+      <label>Left:<span id="c3_lv"></span>&nbsp;&nbsp;</label>
+      <label>Right:<span id="c3_rv"></span>&nbsp;&nbsp;</label>
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch3L">
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch3R">
+    </fieldset>
+    <fieldset>
+      <legend>Channel #4</legend>
+      <input type="checkbox" onClick="toggle(this)" name="mute_c4">
+      <label for="mute_c4">Mute&nbsp;&nbsp;</label>
+      <input type="checkbox" id="bal4" value="Bal4" checked>
+      <label for="bal4">L=R&nbsp;&nbsp;</label>
+      <label>Left:<span id="c4_lv"></span>&nbsp;&nbsp;</label>
+      <label>Right:<span id="c4_rv"></span>&nbsp;&nbsp;</label>
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch4L">
+      <input type="range" min="0" max="255" value="127" class="slider" id="ch4R">
+    </fieldset>
+    <script type="text/javascript" src="sliders.js"></script>
+  </body>
+</html>
