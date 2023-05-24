@@ -17,8 +17,6 @@ No need to install capes or device tree overlays.
 
 If you don't have a midi controller, the levels can be controlled from a web page too. In that case, an ethernet connection is needed.
 
-The gerber files can be found at PCBway: [https://www.pcbway.com/project/shareproject/4_Channel_Audio_Mixer_with_MIDI_control.html](https://www.pcbway.com/project/shareproject/4_Channel_Audio_Mixer_with_MIDI_control.html)
-
 Although the analog and digital power supply and grounds are separated in the design, they can be connected together with a jumper. So, the power from the BeagleBone will supply all the circuit. In my case, the results are good enough with the jumpers.
 
 ![photo of mounted board here](MountedPCB_20.png)
